@@ -14,3 +14,14 @@ let createRow = () => {
 for (let i = 0; i <= 16; i ++) {
         createRow();
 }
+
+const squares = document.querySelectorAll('.square');
+
+squares.forEach(square => {
+    square.addEventListener('mouseover', () => {
+        square.setAttribute('class', 'hoverColor');
+    });
+    square.addEventListener('mouseout', () => {
+        square.setAttribute('class', 'square');
+    });
+});

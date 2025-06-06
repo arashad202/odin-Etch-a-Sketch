@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .subcontainer {
     display: flex;
     gap: 10px;
@@ -5,7 +9,16 @@
 }
 
 .square {
-    width: 16px;
-    height: 16px;
+    width: 30px;
+    height: 30px;
     background-color: red;
 }
+
+.hoverColor {
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+}
+/* .square:hover {
+    background-color: blue;
+} */
