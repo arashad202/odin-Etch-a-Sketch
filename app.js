@@ -1,11 +1,16 @@
 const container = document.querySelector('#container');
 
-for (let i = 0; i <= 16; i ++) {
-    const square = document.createElement('div');
-    square.setAttribute('class', 'square')
-    container.appendChild(square);
+let createRow = () => {
+    const subcontainer = document.createElement('div');
+    subcontainer.setAttribute('class', 'subcontainer');
+    container.appendChild(subcontainer);
+    for (let i = 0; i <= 16; i ++) {
+        const square = document.createElement('div');
+        square.setAttribute('class', 'square');
+        subcontainer.appendChild(square);
+    }
 }
 
-
-container.style.display = 'flex';
-container.style.gap = '10px'
+for (let i = 0; i <= 16; i ++) {
+        createRow();
+}
